@@ -1,1 +1,3 @@
 # Kubeadm-Cluster
+
+Building the cluster from scratch using vagrant for VM's and kubeadm for kubernetes cluster...
