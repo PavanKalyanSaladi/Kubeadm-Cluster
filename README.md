@@ -25,5 +25,6 @@ Kubernetes The Hard Way guides you through bootstrapping a highly available Kube
 
 This tutorial requires four (4) ARM64 based virtual or physical machines connected to the same network. While ARM64 based machines are used for the tutorial, the lessons learned can be applied to other platforms.
 
-* [Prerequisites](docs/01.prerequisite.md)
-* [Setting up the Cluster](docs/02.Compute-Resources.md)
+* [Prerequisites](docs/01-prerequisites.md)
+* [Setting up the Cluster](docs/02-compute-resources.md)
+* [Client tools](03-client-tools.md)
