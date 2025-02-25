@@ -17,7 +17,7 @@ In this section you will provision a Certificate Authority that can be used to g
 Query IPs of hosts we will insert as certificate subject alternative names (SANs), which will be read from `/etc/hosts`.
 
 Set up environment variables. Run the following:
-```bash
+NOTE: Currently, I have one control - if you have more than one, take an extra server for load balancing and add the IP's as well
 CONTROLPLANE=(Enter the Private IP)
 ```
 
