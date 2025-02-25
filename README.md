@@ -28,3 +28,4 @@ This tutorial requires four (4) ARM64 based virtual or physical machines connect
 * [Prerequisites](docs/01-prerequisites.md)
 * [Setting up the Cluster](docs/02-compute-resources.md)
 * [Client tools](03-client-tools.md)
+* [Provisioning CA and Generating TLS certificates](docs/04-certificate-authority.md)
