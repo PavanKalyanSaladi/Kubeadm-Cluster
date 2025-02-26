@@ -155,7 +155,7 @@ Reference docs for kubeconfig [here](https://kubernetes.io/docs/tasks/access-app
 Copy the appropriate `kube-proxy` kubeconfig files to each worker instance:
 
 ```bash
-for instance in node01 node02; do
+for instance in worker01 worker02; do
   scp kube-proxy.kubeconfig ${instance}:~/
 done
 ```
