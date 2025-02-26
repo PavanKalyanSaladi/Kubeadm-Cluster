@@ -17,7 +17,7 @@ In this section you will provision a Certificate Authority that can be used to g
 Query IPs of hosts we will insert as certificate subject alternative names (SANs), which will be read from `/etc/hosts`.
 
 Set up environment variables. Run the following:
-```bash
+NOTE: Currently, I have one control - if you have more than one, take an extra server for load balancing and add the IP's as well
 CONTROLPLANE=(Enter the Private IP)
 ```
 
@@ -181,7 +181,7 @@ DNS.4 = kubernetes.default.svc.cluster
 DNS.5 = kubernetes.default.svc.cluster.local
 IP.1 = ${API_SERVICE}
 IP.2 = ${CONTROLPLANE}
-IP.5 = 127.0.0.1
+IP.3 = 127.0.0.1
 EOF
 ```
 
@@ -259,7 +259,7 @@ keyUsage = nonRepudiation, digitalSignature, keyEncipherment
 subjectAltName = @alt_names
 [alt_names]
 IP.1 = ${CONTROLPLANE}
-IP.3 = 127.0.0.1
+IP.2 = 127.0.0.1
 EOF
 ```
 
