@@ -14,6 +14,8 @@ In this section you will generate kubeconfig files for the `controller manager`,
 
 Each kubeconfig requires a Kubernetes API Server to connect to. To support high availability the IP address assigned to the load balancer will be used, so let's first get the address of the loadbalancer into a shell variable such that we can use it in the kubeconfigs for services that run on worker nodes. The controller manager and scheduler need to talk to the local API server, hence they use the localhost address.
 
+NOTE: I have one controlplane, so using the same
+
 [//]: # (host:controlplane)
 
 ```bash
@@ -153,7 +155,7 @@ Reference docs for kubeconfig [here](https://kubernetes.io/docs/tasks/access-app
 Copy the appropriate `kube-proxy` kubeconfig files to each worker instance:
 
 ```bash
-for instance in node01 node02; do
+for instance in worker01 worker02; do
   scp kube-proxy.kubeconfig ${instance}:~/
 done
 ```
