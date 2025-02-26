@@ -30,3 +30,4 @@ This tutorial requires four (4) ARM64 based virtual or physical machines connect
 * [Client tools](03-client-tools.md)
 * [Provisioning CA and Generating TLS certificates](docs/04-certificate-authority.md)
 * [Generating Kubernetes COnfiguration Files for Authentication](docs/05-kubernetes-configuration-files.md)
+* [Generating the Data Encryption Config and Key](docs/06-data-encryption-keys.md)
