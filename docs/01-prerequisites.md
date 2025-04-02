@@ -38,6 +38,10 @@ Download and install [Vagrant](https://www.vagrantup.com/) on your platform.
 
 This tutorial assumes that you have also installed Vagrant.
 
+### Note
+
+I have used [Excloud](https://console.excloud.in/console/instance) for provisioning three VM's (2CPU, 8GB RAM, 100GB Storage)
+
 
 ### Lab Defaults
 
